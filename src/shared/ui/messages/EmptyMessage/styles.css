@@ -1,0 +1,34 @@
+.empty-message {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+	background-color: #f9f9f9; /* Light grey background */
+	color: #333; /* Dark grey text */
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif; /* Apple-like font stack */
+	padding: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	border-radius: 12px; /* Rounded corners */
+	margin: 20px; /* Space around the block */
+}
+
+.empty-message__icon {
+	font-size: 48px; /* Larger icon size */
+	color: #888; /* Lighter grey for the icon */
+	margin-bottom: 10px; /* Space below the icon */
+}
+
+.empty-message__text {
+	font-size: 18px; /* Slightly larger text size */
+	font-weight: 400; /* Normal font weight */
+	margin: 0; /* No margin */
+}
+
+.empty-message__subtext {
+	font-size: 14px; /* Smaller subtext size */
+	color: #666; /* Darker grey for subtext */
+	margin-top: 5px; /* Space above the subtext */
+}

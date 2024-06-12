@@ -1,0 +1,66 @@
+/* Основные стили для карточек пользователя */
+.user-card {
+	background-color: var(--secondary--white);
+	border-radius: 10px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	margin-bottom: 2rem;
+	width: 90%;
+	max-width: 400px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	user-select: none;
+}
+
+.user-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.user-card__header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 3%;
+}
+
+.user-card__avatar {
+	width: 7rem;
+	height: 7rem;
+	border-radius: 20px;
+	margin-right: 0.625rem;
+	background: linear-gradient(145deg, #f0f0f0, #cacaca);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+		-2px -2px 5px rgba(255, 255, 255, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.user-card__avatar img {
+	border-radius: 50%; /* Делаем само изображение круглым */
+	width: 100%;
+	height: auto;
+}
+
+.user-card__info {
+	flex: 1;
+}
+
+.user-card__name {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: var(--primary-grey);
+}
+
+.user-card__username,
+.user-card__email,
+.user-card__address,
+.user-card__company {
+	font-size: 1em;
+	color: var(--secondary-grey);
+	margin-top: 5px;
+}
+
+.user-card:hover .user-card__name {
+	color: var(--primary-blue);
+}

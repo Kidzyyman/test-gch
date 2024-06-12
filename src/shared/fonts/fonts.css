@@ -1,0 +1,6 @@
+@font-face {
+	font-family: 'SF Pro Text Regular Italic';
+	src: url('./fonts/SFProText-RegularItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: normal;
+}
