@@ -4,10 +4,13 @@ stages:
   - build
   - deploy
 
+before_script:
+  - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+
 build:
   stage: build
   script:
-    - npm install
+    - npm ci
     - npm run build
   artifacts:
     paths:
